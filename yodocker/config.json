@@ -1,6 +1,6 @@
 {
   "name": "yodocker",
-  "version": "0.333",
+  "version": "0.333.3",
   "stage": "experimental",
   "slug": "yodocker",
   "description": "I herd u lieked docker-compose",
