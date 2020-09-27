@@ -1,0 +1,29 @@
+{
+  "name": "yodocker",
+  "version": "0.333",
+  "stage": "experimental",
+  "slug": "yodocker",
+  "description": "I herd u lieked docker-compose",
+  "url": "https://github.com/devnatiomemoriae/yodocker",
+  "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
+  "startup": "system",
+  "boot": "auto",
+  "map": ["share", "config"],
+  "docker_api": true,
+  "panel_icon": "mdi:docker_api",
+  "panel_title": "yodocker",
+  "options": {
+    "commands": [
+        {
+          "command": "docker-compose -p 'yodocker' up -d --remove-orphans",
+          "monitor": "/config/docker-compose.yaml"
+        }
+      ]
+  },
+  "schema": {
+    "commands": [
+      {"command": "str", "monitor": "str?"}
+    ]
+  },
+  "image": "damnatiomemoriae/yodocker"
+}
