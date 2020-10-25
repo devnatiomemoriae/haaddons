@@ -8,7 +8,7 @@
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
   "startup": "system",
   "boot": "auto",
-  "map": ["share", "config"],
+  "map": ["share", "config", "ssl", "backup", "addons"],
   "docker_api": true,
   "panel_icon": "mdi:docker_api",
   "panel_title": "yodocker",
